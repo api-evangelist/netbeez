@@ -1,8 +1,20 @@
 aid: netbeez
 name: Netbeez
-description: 'Netbeez is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Infrastructure SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  NetBeez is a network performance monitoring platform that measures the
+  end-user experience across distributed enterprise, remote-worker, and Wi-Fi
+  networks. Hardware and software agents (including Raspberry Pi, Docker, and
+  network-device-hosted agents on Cisco, Extreme, Cumulus, and Nutanix gear)
+  run continuous and ad-hoc tests — ping, HTTP, DNS, traceroute, path analysis,
+  Wi-Fi, and cellular — and report granular one-second-interval metrics to a
+  central dashboard for real-time alerting and historical troubleshooting. The
+  NetBeez API lets dashboard administrators integrate this telemetry with
+  external tools, reporting, and analytics: a JSON-based v2 API documented on
+  Postman at api.netbeez.net supports read and write operations (create targets,
+  run ad-hoc tests), while a deprecated read-only v1 Swagger API is served
+  per-instance. Alerting integrates outbound via webhooks and pre-built
+  connectors for PagerDuty, Slack, Splunk, Microsoft Teams, ServiceNow, SNMP,
+  syslog, and email. NetBeez was surfaced as a portfolio company of Partech.
 url: https://raw.githubusercontent.com/api-evangelist/netbeez/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +22,88 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://netbeez.net/wp-content/uploads/2021/03/netbeez-logo.png
 tags:
 - Company
-- Infrastructure Saas
-apis: []
+- Infrastructure SaaS
+- Network Monitoring
+- Network Performance Monitoring
+- Observability
+- Wi-Fi Monitoring
+- Digital Experience Monitoring
+- API
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: NetBeez API
+  description: >-
+    Administrator-facing API for integrating NetBeez network-performance
+    telemetry with external tools. v2 is a JSON API (read-write: create targets,
+    run ad-hoc tests) documented on Postman at api.netbeez.net; v1 is a
+    deprecated read-only Swagger API served per NetBeez instance. Authenticated
+    with a dashboard-issued API key sent in the Authorization header.
+  humanURL: https://help.netbeez.net/en/articles/10406758-netbeez-api
+  baseURL: https://api.netbeez.net
+  properties:
+  - type: Documentation
+    url: https://help.netbeez.net/en/articles/10406758-netbeez-api
+  - type: Authentication
+    url: authentication/netbeez-authentication.yml
+  - type: Lifecycle
+    url: lifecycle/netbeez-lifecycle.yml
+  - type: Deprecation
+    url: lifecycle/netbeez-lifecycle.yml
+  - type: ChangeLog
+    url: changelog/netbeez-changelog.yml
+  - type: Conventions
+    url: conventions/netbeez-conventions.yml
+  - type: Webhooks
+    url: asyncapi/netbeez-alerts-webhooks.yml
 common:
 - type: Website
   url: https://netbeez.net/
+- type: Documentation
+  url: https://help.netbeez.net/en/
+- type: HelpCenter
+  url: https://help.netbeez.net/en/
+- type: APIReference
+  url: https://help.netbeez.net/en/collections/11391846-integrations-and-api
+- type: Support
+  url: https://community.netbeez.net/
+- type: Blog
+  url: https://netbeez.net/blog/
+- type: Pricing
+  url: https://netbeez.net/pricing/
+- type: SignUp
+  url: https://netbeez.net/pricing#request-form
+- type: TermsOfService
+  url: https://netbeez.net/terms-of-use
+- type: PrivacyPolicy
+  url: https://netbeez.net/privacy-policy
+- type: ChangeLog
+  url: https://help.netbeez.net/en/collections/11391847-version-release-notes
+- type: DomainSecurity
+  url: security/netbeez-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

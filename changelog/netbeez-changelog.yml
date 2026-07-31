@@ -1,0 +1,41 @@
+generated: '2026-07-20'
+method: searched
+source: https://help.netbeez.net/en/collections/11391847-version-release-notes
+api: NetBeez API
+scheme: MAJOR.MINOR product release notes (dashboard + agent + API changes combined)
+current_version: '15.5'
+changelog_url: https://help.netbeez.net/en/collections/11391847-version-release-notes
+window: recent
+entries:
+- version: '15.5'
+  date: '2026-07'
+  url: https://help.netbeez.net/en/articles/15899379-release-notes-version-15-5
+  breaking: false
+  highlights:
+  - Collapsible scheduled-test details header on the agent view.
+  - Agent IPv6 dual-stack wired testing (eth0 namespace) alongside IPv4.
+  - Path Analysis low-TTL monitoring intervals down to 1 second (was 60s minimum).
+  - Bullseye to Bookworm OS upgrade scheduling for Raspberry Pi agents (off-hours window).
+- version: '15.4'
+  date: '2026-06-04'
+  url: https://help.netbeez.net/en/articles/15376477-release-notes-version-15-4
+  breaking: false
+  highlights:
+  - Aggregate alert webhooks now include aggregation_entity_type (agent/target/Wi-Fi profile/scheduled test).
+  - AI summarization default model updated to Gemini 2.5 Flash.
+  - DNS force-IPv4 / skip-IPv6 options in both dashboard and API.
+- version: '15.3'
+  date: '2026-03-24'
+  url: https://help.netbeez.net/en/articles/14184485-release-notes-version-15-3
+  breaking: false
+  highlights:
+  - Webhook support for scheduled-test alerts (parity with other alert paths).
+  - Full DNS record type coverage (NS, MX, SRV, CAA) in dashboard and API.
+  - Cellular interface support for remote-worker agents.
+- version: '15.2'
+  date: '2026-01-26'
+  url: https://help.netbeez.net/en/articles/13467900-release-notes-version-15-2
+  breaking: false
+  highlights:
+  - AI summarization infrastructure migrated from AWS Lambda/OpenAI to Google Cloud (Vertex AI).
+  - AI summaries for agent logs to assist Wi-Fi troubleshooting.

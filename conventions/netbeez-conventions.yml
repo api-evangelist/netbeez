@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://help.netbeez.net/en/articles/10406758-netbeez-api +
+  https://help.netbeez.net/en/collections/11391847-version-release-notes
+api: NetBeez API
+auth:
+  style: API key in Authorization header (dashboard-issued). See authentication/netbeez-authentication.yml
+media_type: application/json
+versioning:
+  style: Version selector (v1, v2); v2 is JSON-based and active, v1 is Swagger-based and deprecated. See lifecycle/netbeez-lifecycle.yml
+  v2_base: https://api.netbeez.net
+  v1_base: https://<dashboard_url>/swagger/index.html
+idempotency:
+  supported: false
+  notes: No idempotency key mechanism is documented.
+pagination:
+  documented: false
+  notes: Not documented in public help center; v2 endpoints are documented in a Postman workspace.
+webhooks:
+  supported: true
+  notes: >-
+    Alert webhooks are emitted for aggregate alerts and scheduled-test alerts;
+    aggregate payloads include an aggregation_entity_type field indicating whether
+    the aggregate is scoped to an agent, target, Wi-Fi profile, or scheduled test.
+    See asyncapi/netbeez-alerts-webhooks.yml
+error_envelope:
+  documented: false
+rate_limiting:
+  documented: false
+cross_links:
+  authentication: authentication/netbeez-authentication.yml
+  lifecycle: lifecycle/netbeez-lifecycle.yml
+  webhooks: asyncapi/netbeez-alerts-webhooks.yml

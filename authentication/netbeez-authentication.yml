@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: https://help.netbeez.net/en/articles/10406758-netbeez-api (NetBeez API) + https://help.netbeez.net/en/articles/10406760-netbeez-api-swagger-endpoints
+api: NetBeez API
+summary: >-
+  The NetBeez API authenticates with a dashboard-issued API key. The key is
+  passed in an "Authorization" HTTP header on every request. API keys are
+  generated and managed by dashboard administrators under Settings > API Keys.
+schemes:
+- id: api_key
+  type: apiKey
+  in: header
+  name: Authorization
+  description: >-
+    Dashboard-generated API key sent in the Authorization request header.
+    Administrators generate keys in the NetBeez Dashboard under
+    Settings > API Keys ("Generate API Key"). Applies to both the JSON
+    v2 API (https://api.netbeez.net) and the deprecated read-only v1
+    Swagger API served per-instance at https://<dashboard_url>/swagger/index.html
+    (which also prompts for the API key and a version, defaulting to v1).
+key_management:
+  location: NetBeez Dashboard > Settings > API Keys
+  action: Generate API Key
+  docs: https://help.netbeez.net/en/collections/11391846-integrations-and-api
+oauth2: false
+openid_connect: false
+mutual_tls: false
+notes: >-
+  No OAuth2/OIDC or scope model is documented; access is a single bearer-style
+  API key. The v1 Swagger surface is read-only; the v2 JSON API supports read
+  and write (e.g. create targets, run ad-hoc tests).

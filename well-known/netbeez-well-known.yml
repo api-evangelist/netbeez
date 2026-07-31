@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of NetBeez hosts (netbeez.net, api.netbeez.net, help.netbeez.net)
+summary: >-
+  No .well-known discovery documents are published on any NetBeez host. All
+  probed paths returned 404. Recorded as an honest negative result.
+probes:
+- host: netbeez.net
+  path: /.well-known/security.txt
+  status: 404
+  file: null
+- host: netbeez.net
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- host: netbeez.net
+  path: /.well-known/api-catalog
+  status: 404
+  file: null
+- host: api.netbeez.net
+  path: /.well-known/security.txt
+  status: 404
+  file: null
+- host: api.netbeez.net
+  path: /.well-known/openid-configuration
+  status: 404
+  file: null

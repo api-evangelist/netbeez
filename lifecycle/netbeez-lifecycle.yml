@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://help.netbeez.net/en/articles/10406758-netbeez-api +
+  https://help.netbeez.net/en/collections/11391847-version-release-notes
+api: NetBeez API
+versioning:
+  scheme: Explicit API version parameter (v1, v2) alongside product release versioning (MAJOR.MINOR, e.g. 15.5).
+  current_api_versions:
+  - version: v2
+    status: active
+    format: JSON
+    access: read-write
+    docs: https://api.netbeez.net
+    notes: JSON-standards API intended to fully replace v1; supports create targets, run ad-hoc tests, etc.
+  - version: v1
+    status: deprecated
+    format: Swagger/OpenAPI
+    access: read-only
+    docs: https://help.netbeez.net/en/articles/10406760-netbeez-api-swagger-endpoints
+    served_at: https://<dashboard_url>/swagger/index.html
+    notes: Being deprecated; superseded by v2.
+  current_product_version: '15.5'
+deprecation:
+  policy_documented: true
+  summary: >-
+    The v1 Swagger-based API is explicitly documented as "being deprecated" and
+    is scheduled to be fully replaced by the JSON-based v2 API.
+  source: https://help.netbeez.net/en/articles/10406758-netbeez-api
+  deprecated_surfaces:
+  - NetBeez API v1 (Swagger, read-only)
+  sunset_header: null
+  deprecation_header: null
+status_page:
+  present: false
+  notes: No public NetBeez status page found (status.netbeez.net does not resolve; netbeez.statuspage.io redirects to the Statuspage marketing site).
+sla:
+  documented: false
+release_notes: https://help.netbeez.net/en/collections/11391847-version-release-notes

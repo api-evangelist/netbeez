@@ -1,0 +1,49 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  https://help.netbeez.net/en/collections/11391846-integrations-and-api +
+  release notes 15.3 (scheduled-test alert webhooks) and 15.4 (aggregate alert webhooks)
+type: Webhooks
+api: NetBeez API
+summary: >-
+  NetBeez emits outbound alert/incident notifications. In addition to a set of
+  pre-built alert integrations, NetBeez supports generic alert webhooks for
+  aggregate alerts and scheduled-test alerts, configured under
+  Settings > Integrations and Notification Settings in the dashboard.
+webhooks:
+- event: aggregate_alert
+  since: '15.4'
+  description: >-
+    Aggregate alert webhook. Payload includes aggregation_entity_type indicating
+    the scope of the aggregate: agent, target, Wi-Fi profile, or scheduled test.
+  payload_fields:
+  - name: aggregation_entity_type
+    description: One of agent | target | wifi_profile | scheduled_test.
+- event: scheduled_test_alert
+  since: '15.3'
+  description: >-
+    Webhook for scheduled-test alerts, providing the same class of notification
+    as other alert paths for automations.
+prebuilt_alert_integrations:
+- name: PagerDuty
+  docs: https://help.netbeez.net/en/articles/10406762-pagerduty-alerts-integration
+- name: Slack
+  docs: https://help.netbeez.net/en/articles/10406763-slack-alerts-integration
+- name: Splunk
+  docs: https://help.netbeez.net/en/articles/10406764-splunk-alerts-integration
+- name: Microsoft Teams
+  docs: https://help.netbeez.net/en/articles/10406743-microsoft-teams-alerts-integration
+- name: ServiceNow
+  docs: https://help.netbeez.net/en/articles/10406742-servicenow-alerts-integration
+- name: SNMP Traps
+  docs: https://help.netbeez.net/en/articles/10406741-snmp-traps
+- name: Syslog
+  docs: https://help.netbeez.net/en/articles/10406740-configure-syslog-alert-notifications
+- name: SMTP (email)
+  docs: https://help.netbeez.net/en/articles/10406738-configure-smtp-notifications
+configuration:
+  path: NetBeez Dashboard > Settings > Integrations, then Notification Settings
+  docs: https://help.netbeez.net/en/articles/10406745-integrations
+notes: >-
+  No published AsyncAPI document or webhook payload JSON Schema is available in
+  the public help center; this is a documented webhook catalog, not a spec.
