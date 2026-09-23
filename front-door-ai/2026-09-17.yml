@@ -1,0 +1,26 @@
+# Front Door AI Index — netbeez — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: netbeez
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: netbeez.net
+  final_host: netbeez.net
+  ownership: own
+  owner: netbeez
+  shares_host_with: null
+  inherited_from: null
+  verdict: silent
+  score: 0
+  host_score: 0
+  density: 0.0
+  words: 839
+  tiers:
+    agentic: 0
+    core: 0
+    model: 0
+  ambiguous: 4
+  top_terms:
+    agent: 3
+    intelligence: 1
