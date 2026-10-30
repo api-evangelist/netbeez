@@ -64,6 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Netbeez is a company surfaced as a portfolio company of partech and added to the API Evangelist network as a stub for enrichment. Sector: Infrastructure SaaS. This profile is a lead awaiting the enrichment pipeline.
+NetBeez is a network performance monitoring platform that measures the end-user experience across distributed enterprise, remote-worker, and Wi-Fi networks. Hardware and software agents (including Raspberry Pi, Docker, and network-device-hosted agents on Cisco, Extreme, Cumulus, and Nutanix gear) run continuous and ad-hoc tests — ping, HTTP, DNS, traceroute, path analysis, Wi-Fi, and cellular — and report granular one-second-interval metrics to a central dashboard for real-time alerting and historical troubleshooting. The NetBeez API lets dashboard administrators integrate this telemetry with external tools, reporting, and analytics: a JSON-based v2 API documented on Postman at api.netbeez.net supports read and write operations (create targets, run ad-hoc tests), while a deprecated read-only v1 Swagger API is served per-instance. Alerting integrates outbound via webhooks and pre-built connectors for PagerDuty, Slack, Splunk, Microsoft Teams, ServiceNow, SNMP, syslog, and email. NetBeez was surfaced as a portfolio company of Partech.
 
-Backed by: partech — https://netbeez.net/
+**Areas:** Company · Infrastructure Saas · Network Monitoring · Network Performance Monitoring · Observability · Wi-Fi Monitoring · Digital Experience Monitoring
+
+## Netbeez on APIs.io
+
+Everything profiled for Netbeez is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/netbeez/](https://apis.io/providers/netbeez/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [NetBeez API](https://apis.io/apis/netbeez/netbeez-api/) — Administrator-facing API for integrating NetBeez network-performance telemetry with external tools. v2 is a JSON API (read-write: create targets, run ad-hoc…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Netbeez Alerts Webhooks](https://apis.io/asyncapis/netbeez/netbeez-alerts-webhooks/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Netbeez Authentication](https://apis.io/security/netbeez/netbeez-authentication/)
+- [Netbeez Domain Security](https://apis.io/security/netbeez/netbeez-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://netbeez.net/)
+- [Documentation](https://help.netbeez.net/en/)
+- [API reference](https://help.netbeez.net/en/collections/11391846-integrations-and-api)
+- [Pricing](https://netbeez.net/pricing/)
+- [Sign up](https://netbeez.net/pricing#request-form)
+- [Support](https://community.netbeez.net/)
+- [Changelog](https://help.netbeez.net/en/collections/11391847-version-release-notes)
+- [Blog](https://netbeez.net/blog/)
+- [Terms of service](https://netbeez.net/terms-of-use)
+- [Privacy policy](https://netbeez.net/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 37.2** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 39.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 31.6 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 44.7 |
+
+**Agent readiness 19.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/netbeez/](https://apis.io/providers/netbeez/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Netbeez: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/netbeez/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
